@@ -31,7 +31,7 @@ static Scanner sc = new Scanner(System.in);
             }
     }
     public static void FrF(){
-        char continuar = 'S';
+        char continuar = 's';
                     int dist = rand.nextInt(15,30);
                     int dist_f = dist;
                     int balas = 25;
