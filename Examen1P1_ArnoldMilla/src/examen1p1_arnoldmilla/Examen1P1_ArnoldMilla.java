@@ -86,11 +86,11 @@ static Scanner sc = new Scanner(System.in);
                                 dist_f = dist_f - movimiento;
                                 movimiento = rand.nextInt(3,5);
                             }//el tiro no dio y el zombie avanza
-                            
                             balas -= 1;
+                            
                             if (hpz < 0){
                                     hpz = 0;
-                            }//verificacion numero negativo de balas a 0
+                            }//verificacion numero negativo de vida a 0
                             
                             if (hpz == 0){
                                 System.out.println("Vida restante del zombie: " + hpz);
