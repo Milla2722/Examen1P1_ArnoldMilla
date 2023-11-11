@@ -22,13 +22,13 @@ static Scanner sc = new Scanner(System.in);
                     case 2:{
                         Tri_force();
                     }break;//fin opcion 2 Tri Fuerza
-                }
+                }//fin switch opciones
             System.out.println("1. Fight or Flight");
             System.out.println("2. Tri Fuerza");
             System.out.println("3. Salir del programa");
             System.out.println("[1,2,3]");
             op = sc.nextInt();
-            }
+            }//fin while opcion valida
     }
     public static void FrF(){
         char continuar = 's';
@@ -131,16 +131,18 @@ static Scanner sc = new Scanner(System.in);
                                 if (size < 20){
                                     System.out.println("El tamaño tiene que ser mayor que 20");
                                 break;
-                                }
+                                }//verificacion tamaño mayor que 20
+                                
                                 if (size % 2 != 0){
                                     System.out.println("El tamaño tiene que ser par");
                                 break;
-                                }
+                                }//verificacion tamaño numero par
+                                
                                 System.out.println();
                                 for (cont = contador; cont < cambio ; cont++){
-                                    System.out.print(" ");
-                                    
+                                    System.out.print(" "); 
                                 }//fin for lineas horizontales espacio
+                                
                                 for (cont = 0; cont < contador - 1 ; cont++){
                                     if (cont == 0){
                                         System.out.print("*");
@@ -151,7 +153,8 @@ static Scanner sc = new Scanner(System.in);
                                     else {
                                         System.out.print("*");
                                     }
-                                }
+                                }//fin for triangulo izquierdo
+                                
                                 for (cont = 0; cont < contador; cont++){
                                     if (cont == contador - 1){
                                         System.out.print("*");
@@ -164,7 +167,7 @@ static Scanner sc = new Scanner(System.in);
                                     }
                                 }
                                     
-                            }//fin for lineas verticales
+                            }//fin for triangulo derecho
                         System.out.println("");
     }
 }
