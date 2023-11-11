@@ -123,14 +123,47 @@ static Scanner sc = new Scanner(System.in);
                         System.out.println("");
     }
     public static void Tri_force(){
+        int cont = 0;
         System.out.println("Ingrese un tamaño mayor a 20 y par");
                         int size = sc.nextInt();
                         int cambio = (size / 2) + 1;
-                            for (int contador = 0; contador < cambio; contador++){
+                            for (int contador = 0; contador <= cambio; contador++){
+                                if (size < 20){
+                                    System.out.println("El tamaño tiene que ser mayor que 20");
+                                break;
+                                }
+                                if (size % 2 != 0){
+                                    System.out.println("El tamaño tiene que ser par");
+                                break;
+                                }
                                 System.out.println();
-                                for (int cont = 0; cont < size + 1; cont++){
-                                    System.out.print("*");
-                                }//fin for lineas horizontales
+                                for (cont = contador; cont < cambio ; cont++){
+                                    System.out.print(" ");
+                                    
+                                }//fin for lineas horizontales espacio
+                                for (cont = 0; cont < contador - 1 ; cont++){
+                                    if (cont == 0){
+                                        System.out.print("*");
+                                    }
+                                    else if (contador == cambio / 2){
+                                        System.out.print(" ");
+                                    }
+                                    else {
+                                        System.out.print("*");
+                                    }
+                                }
+                                for (cont = 0; cont < contador; cont++){
+                                    if (cont == contador - 1){
+                                        System.out.print("*");
+                                    }
+                                    else if (contador == cambio / 2){
+                                        System.out.print(" ");
+                                    }
+                                    else {
+                                        System.out.print("*");
+                                    }
+                                }
+                                    
                             }//fin for lineas verticales
                         System.out.println("");
     }
